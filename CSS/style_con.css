@@ -1,0 +1,165 @@
+@font-face {
+  font-family: Zapf-Chancery, cursive;
+  src: url('./media/john/DD/DEV/SHR/Zapf Chancery/Zapf Chancery Italic/Zapf Chancery Italic.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+html, body {
+	padding: 0; 
+	margin: 0; 
+	height:100%;}
+
+body {
+  background-image: url('../IMG/frankyfromgermany-cattle-192976_1920.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #2f2f2f;
+  font-family: zapf-chancery, cursive;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+	color: blue;
+	text-decoration: none;
+}
+
+footer {
+	background-color: #2f2f2f;
+	position: absolute;
+   padding: 20px;
+   text-align: center;
+   font-size: 18px;
+   color: #f27d08;
+   width: 100%;
+   bottom: 0;
+   left: 0;
+   right: 0;
+}
+
+footer p {
+	color: #f27d08;
+}
+
+h1 {
+	color: #f27d08;
+	text-align: center;
+	font-size: 35px;
+}
+
+p {
+	color: whitesmoke;
+	font-size: 20px;
+}
+
+ul {
+	color: whitesmoke;
+	font-size: 20px;
+}
+
+.topnav {	
+  overflow: hidden;
+  background-color: #2f2f2f;
+  position: fixed;
+  overflow: hidden;
+  z-index: 10000;
+  top: 0;
+  width: 100%;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: #f27d08;
+}
+
+.topnav a.active {
+  background-color: #f27d08;
+  color: white;
+}
+
+.topnav a.split {
+  float: right;
+  background-color: transparent;
+  color: #f27d08;
+  font-size: 32px;
+}
+
+.btn-submit{
+  background-color: #f27d08;
+  color: white;
+  font-size: 20px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  
+}
+
+.btn-submit {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.btn-submit :hover {
+  background-color: white;
+  color: black;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #f27d08;
+  color: white;
+  font-size: 20px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+  color: black;
+}
+
+.form-container {
+  border: 1px solid white;
+  border-radius: 25px;
+  background-color: rgba(47, 47, 47, 0.6);
+  color: whitesmoke;
+  margin-top: 0%;
+  padding: 20px;
+  position: relative;
+  width: 60%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-container h1 {
+  text-align: center;
+  color: #f27d08;
+}
