@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>PHP Contact Form</title>
+<link rel="stylesheet" type="text/css" href="./CSS/style_con.css" />
+</head>
+<body>
+
+<div class="topnav">
+  	<a href="./index.html">Home</a>
+  	<a href="./index.html#intro">About</a>
+  	<a class="active" href="./contact.html">Contact</a>
+  	<a href="./index.html#info">Info</a>
+  	<a href="#cattle">Heard</a>
+  	<a href="./index.html#top" class="split">Sunflower Highland Ranch</a>
+</div>
+
+
+	<div class="form-container">
+		<h1>Contact Us</h1>
+		<form name="frmContact" id="" frmContact"" method="post" action=""
+			enctype="multipart/form-data" onsubmit="return validateContactForm()">
+
+			<div class="input-row">
+				<label style="padding-top: 20px;">Name</label> <span
+					id="userName-info" class="info"></span><br /> <input type="text"
+					class="input-field" name="userName" id="userName" placeholder="Full Name" />
+			</div>
+			<div class="input-row">
+				<label>Email</label> <span id="userEmail-info" class="info"></span><br />
+				<input type="text" class="input-field" name="userEmail"
+					id="userEmail" placeholder="Your@email.com"/>
+			</div>
+			<div class="input-row">
+				<label>Subject</label> <span id="subject-info" class="info"></span><br />
+				<input type="text" class="input-field" name="subject" id="subject" placeholder="Info On Available Cow"/>
+			</div>
+			<div class="input-row">
+				<label>Message</label> <span id="userMessage-info" class="info"></span><br />
+				<textarea name="content" id="content" class="input-field" cols="60"
+					rows="6" placeholder="Message! This PHP Form Does Not Function Here. Server Throws Error! For Portfolio Purposes Only"></textarea>
+			</div>
+			<div>
+				<input type="submit" name="send" class="btn-submit" value="Send" />
+
+				<div id="statusMessage"> 
+                        <?php
+                        if (! empty($message)) {
+                            ?>
+                            <p class='<?php echo $type; ?>Message'><?php echo $message; ?></p>
+                        <?php
+                        }
+                        ?>
+                    </div>
+			</div>
+		</form>
+	</div>
+</div>
+	
+
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"
+		type="text/javascript"></script>
+	<!-- include JavaScript validation here -->
+	
+<footer>
+  <p>Sunflower Highland Ranch &#169 2026</p>
+</footer>
+</body>
+</html>
