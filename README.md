@@ -1,2 +1,2 @@
 # SHR - Web Site project
-A none-frame work web site
+A non-framework web site
